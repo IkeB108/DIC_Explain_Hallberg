@@ -41,7 +41,7 @@ function setup(){
     }
     if(buttonName == "restart"){
       let visible = () => { return animationFrame == 165 }
-      return {x: width * 0.5, y: height - (width * d), w: width * 0.15, visible}
+      return {x: width * id, y: height - (width * d), w: width * 0.15, visible}
     }
   }
 }
