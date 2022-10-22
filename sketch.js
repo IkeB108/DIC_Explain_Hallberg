@@ -107,7 +107,7 @@ function draw(){
   
   idleFrames ++
   let shouldRefresh = idleFrames == 70 * 60 * 60; //Refresh after 1 hour
-  if(animationFrame !== 0)shouldRefresh = idleFrames == 70 * 10
+  if(animationFrame !== 0)shouldRefresh = idleFrames == 70 * 25
   
   if(shouldRefresh)location.reload();
 }
