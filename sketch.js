@@ -156,3 +156,11 @@ function cursorClick(b){
     }
   }
 }
+
+function windowResized(){
+  if(typeof willRefresh == "undefined"){
+    setTimeout( ()=> { location.reload(); }, 3000 )
+    console.log("Will refresh...")
+    willRefresh = true; 
+  }
+}
